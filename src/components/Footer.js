@@ -5,14 +5,15 @@ const StyledLink = styled(Link)({
     cursor: "pointer",
     color: "#fff",
     textDecoration: "none",
-    fontSize: "20px"
+    fontSize: "20px",
+    ":hover": {color: "#000"}
 })
 
 const Footer = () => {
     return (
-        <Box sx={{ background: "#BE6C30" }}>
+        <Box sx={{ background: "#BE6C30", padding: "50px 0" }}>
             <Container >
-                <Grid container spacing={6} sx={{ padding: "20px", color: "#fff", letterSpacing: "1px" }}>
+                <Grid container sx={{ padding: "20px", color: "#fff", letterSpacing: "1px" }}>
                     
                     <Grid item sx={12} md={3}>
                         <Typography variant='h4' sx={{ letterSpacing: "5px" }}><span style={{ fontWeight: 700 }}>CARE</span> JOBS</Typography>

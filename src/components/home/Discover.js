@@ -13,7 +13,8 @@ const Discover = () => {
                     <img width="320px" src='./discover__1.png' alt='' />
                 </Grid>
                 <Grid items xs={12} md={4} sx={{
-                    marginTop: { md: "135px", xs: "0" },
+                    marginTop: { md: "135px", xs: "60px" },
+                    marginBottom: "60px",
                     paddingRight: { md: 6, xs: 0 }
                 }}>
                     <Typography variant='p' component='p' color="gray" >

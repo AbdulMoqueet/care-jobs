@@ -24,19 +24,22 @@ const Navbar = () => {
             <Toolbar sx={{ background: "#F1EDEA", color: "#000" }}>
                 <Container>
                     <Stack flexDirection="row" justifyContent="space-between" alignItems="center">
-                        <Box fontSize="28px" letterSpacing={5}><span style={{ color: "#BE6C30", fontWeight: "bold" }}>CARE</span> JOBS</Box>
+
+                        <Link style={{ textDecoration: "none", color: "#000" }} to="/">
+                            <Box fontSize="28px" letterSpacing={5}><span style={{ color: "#BE6C30", fontWeight: "bold" }}>CARE</span> JOBS</Box>
+                        </Link>
 
                         <Icon sx={{ display: { xs: "block", md: "none" } }}>
-                            <FiMenu onClick={()=> {
+                            <FiMenu onClick={() => {
                                 setNavOpen(true)
                                 document.body.style.overflowY = 'hidden'
                             }} />
                         </Icon>
 
                         <Stack sx={{ display: { xs: "none", md: "block" } }} flexDirection="row" gap="40px">
-                            <StyledLink sx={{marginLeft: "30px"}} to="/about">About</StyledLink>
-                            <StyledLink sx={{marginLeft: "30px"}} to="#">Find Job</StyledLink>
-                            <StyledLink sx={{marginLeft: "30px"}} to="#">Contact</StyledLink>
+                            <StyledLink sx={{ marginLeft: "30px" }} to="/about">About</StyledLink>
+                            <StyledLink sx={{ marginLeft: "30px" }} to="/find-job">Find Job</StyledLink>
+                            <StyledLink sx={{ marginLeft: "30px" }} to="/contact">Contact</StyledLink>
                         </Stack>
 
                         <Box sx={{
@@ -47,21 +50,40 @@ const Navbar = () => {
                             width: "100%",
                             height: "100vh",
                             padding: "20px 25px",
-                            display: navOpen?"block":"none"
+                            display: navOpen ? "block" : "none"
                         }}>
 
                             <Stack flexDirection="row" justifyContent="space-between" alignItems="center">
                                 <Typography variant='h5'>Care Jobs</Typography>
-                                <GrClose fontSize={20} onClick={()=> {
-                                setNavOpen(false)
-                                document.body.style.overflowY = 'auto'
-                            }} />
+                                <GrClose fontSize={20} onClick={() => {
+                                    setNavOpen(false)
+                                    document.body.style.overflowY = 'auto'
+                                }} />
                             </Stack>
 
                             <Box sx={{ display: "grid", placeItems: "center", height: "90%" }}>
                                 <Stack gap="20px" fontSize="30px">
-                                    <StyledLink to="/about">About</StyledLink>
-                                    <StyledLink to="#">Contact</StyledLink>
+
+                                    <StyledLink to="/" onClick={() => {
+                                        setNavOpen(false)
+                                        document.body.style.overflowY = 'auto'
+                                    }}>Home</StyledLink>
+
+                                    <StyledLink to="/about" onClick={() => {
+                                        setNavOpen(false)
+                                        document.body.style.overflowY = 'auto'
+                                    }}>About</StyledLink>
+
+                                    <StyledLink to="/find-job" onClick={() => {
+                                        setNavOpen(false)
+                                        document.body.style.overflowY = 'auto'
+                                    }}>Find Job</StyledLink>
+
+                                    <StyledLink to="/contact" onClick={() => {
+                                        setNavOpen(false)
+                                        document.body.style.overflowY = 'auto'
+                                    }}>Contact</StyledLink>
+
                                 </Stack>
                             </Box>
 
