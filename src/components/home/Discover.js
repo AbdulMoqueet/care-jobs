@@ -6,7 +6,7 @@ import {Container, Grid, Typography } from '@mui/material'
 const Discover = () => {
     return (
         <Container sx={{ background: "#fff", marginRight: "auto" }}>
-            <Grid container pl="40px" pt="80px" textAlign="center" >
+            <Grid container pl={{xs:"0",md:"40px"}} pt="80px" >
                 <Grid items xs={12} md={4} >
                     <Typography variant='h4' sx={{fontSize: "34px"}}>Discover more than</Typography>
                     <Typography variant='h4' mt="15px" mb="40px"><span style={{ color: "#BE6C30" }}>2 million</span> jobs!</Typography>

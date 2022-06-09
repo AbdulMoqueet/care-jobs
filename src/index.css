@@ -19,3 +19,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.list{
+  list-style: none;
+  padding-left: 30px;
+}
+
+.list li{
+  margin: 10px 0;
+  color: #6B6B6B;
+}
+
+.list li:first-child{
+  margin: 0 !important;
+}
+
+.list li::before {
+  content: "\2022";  
+  color: #BE6C30;
+  font-size: 25px;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}

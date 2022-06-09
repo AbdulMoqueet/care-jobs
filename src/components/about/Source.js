@@ -15,11 +15,14 @@ const Source = () => {
             <Grid container spacing={2} justifyContent="center" alignItems="center">
 
                 <Grid item xs={12} md={6}>
-                    <Box sx={{ width: {xs:"auto", md:"500px"}, paddingLeft: {xs:"0", md:"70px"} }}>
-                        <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: {xs:"center", md:"right"} }}>Need Help Sourcing </Typography>
-                        <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: {xs:"center", md:"right"} }}>- Candidates? </Typography>
+                    <Box sx={{ width: { xs: "auto", md: "450px" }, paddingLeft: { xs: "0", md: "70px" } }}>
+                        <Box sx={{width:"fit-content"}}>
+                            <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: { xs: "left", md: "left" } }}>Need Help Sourcing </Typography>
 
-                        <Typography sx={{my:"20px"}} variant='p' component='p'>
+                            <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: "right" }}>- Candidates? </Typography>
+                        </Box>
+
+                        <Typography sx={{ my: "20px", color: "#505050" }} variant='p' component='p'>
                             Do you have a lot of open positions needing to be filled? We have lots of traffic and can help you get in front of highly qualified candidates today! Our vast network of healthcare recruiting tools can help you increase applications submissions four times the number you recieve now (and sometimes more).
 
                             Contact us today and we'll explain everything.

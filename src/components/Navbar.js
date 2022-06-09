@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { AppBar, Box, Container, Stack, Toolbar, styled, Icon, Typography } from '@mui/material'
 import { FiMenu } from "react-icons/fi"
 import { GrClose } from "react-icons/gr"
+import { BsFacebook, BsTwitter } from "react-icons/bs"
+import { FaLinkedinIn } from "react-icons/fa"
 import { Link } from 'react-router-dom'
 
 const StyledLink = styled(Link)({
@@ -15,12 +17,25 @@ const StyledLink = styled(Link)({
     }
 })
 
+const StyledBox = styled(Box)({
+    width: "30px",
+    height: "30px",
+    border: "solid 1px #000",
+    display: "grid",
+    placeItems: "center"
+})
+
 const Navbar = () => {
 
     const [navOpen, setNavOpen] = useState(false)
 
+    const closeNav = () => {
+        setNavOpen(false)
+        document.body.style.overflowY = 'auto'
+    }
+
     return (
-        <AppBar position='sticky'>
+        <AppBar position='sticky' sx={{ boxShadow: "none" }}>
             <Toolbar sx={{ background: "#F1EDEA", color: "#000" }}>
                 <Container>
                     <Stack flexDirection="row" justifyContent="space-between" alignItems="center">
@@ -38,7 +53,7 @@ const Navbar = () => {
 
                         <Stack sx={{ display: { xs: "none", md: "block" } }} flexDirection="row" gap="40px">
                             <StyledLink sx={{ marginLeft: "30px" }} to="/about">About</StyledLink>
-                            <StyledLink sx={{ marginLeft: "30px" }} to="/find-job">Find Job</StyledLink>
+                            <StyledLink sx={{ marginLeft: "30px" }} to="/find-jobs?page=1">Find Job</StyledLink>
                             <StyledLink sx={{ marginLeft: "30px" }} to="/contact">Contact</StyledLink>
                         </Stack>
 
@@ -55,40 +70,47 @@ const Navbar = () => {
 
                             <Stack flexDirection="row" justifyContent="space-between" alignItems="center">
                                 <Typography variant='h5'>Care Jobs</Typography>
-                                <GrClose fontSize={20} onClick={() => {
-                                    setNavOpen(false)
-                                    document.body.style.overflowY = 'auto'
-                                }} />
+                                <GrClose fontSize={20} onClick={closeNav} />
                             </Stack>
 
                             <Box sx={{ display: "grid", placeItems: "center", height: "90%" }}>
                                 <Stack gap="20px" fontSize="30px">
 
-                                    <StyledLink to="/" onClick={() => {
-                                        setNavOpen(false)
-                                        document.body.style.overflowY = 'auto'
-                                    }}>Home</StyledLink>
+                                    <StyledLink to="/" onClick={closeNav}>Home</StyledLink>
 
-                                    <StyledLink to="/about" onClick={() => {
-                                        setNavOpen(false)
-                                        document.body.style.overflowY = 'auto'
-                                    }}>About</StyledLink>
+                                    <StyledLink to="/about" onClick={closeNav}>About</StyledLink>
 
-                                    <StyledLink to="/find-job" onClick={() => {
-                                        setNavOpen(false)
-                                        document.body.style.overflowY = 'auto'
-                                    }}>Find Job</StyledLink>
+                                    <StyledLink to="/find-jobs?page=1" onClick={closeNav}>Find Job</StyledLink>
 
-                                    <StyledLink to="/contact" onClick={() => {
-                                        setNavOpen(false)
-                                        document.body.style.overflowY = 'auto'
-                                    }}>Contact</StyledLink>
+                                    <StyledLink to="/contact" onClick={closeNav}>Contact</StyledLink>
 
                                 </Stack>
                             </Box>
 
 
+                            <Box sx={{
+                                position: "absolute",
+                                bottom: "20px",
+                                left: "50%",
+                                transform: "translate(-50%)",
+                                fontSize: "20px"
+                            }}>
+                                <Stack justifyContent="center" alignItems="center" flexDirection="row" gap="30px">
 
+                                    <StyledBox>
+                                        <BsFacebook />
+                                    </StyledBox>
+
+                                    <StyledBox>
+                                        <FaLinkedinIn />
+                                    </StyledBox>
+
+                                    <StyledBox>
+                                        <BsTwitter />
+                                    </StyledBox>
+
+                                </Stack>
+                            </Box>
 
                         </Box>
 

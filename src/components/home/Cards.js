@@ -20,7 +20,7 @@ const Cards = () => {
                             <BsCheck2Circle style={{ fontSize: "120px", marginTop: "30px" }} />
                             <Box sx={{ marginTop: "30px" }}>
                                 <Typography variant='h5' fontWeight="bold" mb={2}>Easy to use</Typography>
-                                <Typography variant='p' component='p'>Search by title, skill or keyword. Select a location and we’ll find all the open positions in your area.</Typography>
+                                <Typography color="#505050" variant='p' component='p'>Search by title, skill or keyword. Select a location and we’ll find all the open positions in your area.</Typography>
                             </Box>
 
                         </CardContent>
@@ -34,8 +34,8 @@ const Cards = () => {
 
                             <CgBox style={{ fontSize: "120px", marginTop: "30px" }} />
                             <Box sx={{ marginTop: "30px" }}>
-                                <Typography variant='h5' fontWeight="bold" mb={2}>Easy to use</Typography>
-                                <Typography variant='p' component='p'>Search by title, skill or keyword. Select a location and we’ll find all the open positions in your area.</Typography>
+                                <Typography variant='h5' fontWeight="bold" mb={2}>1,000+ job types</Typography>
+                                <Typography color="#505050" variant='p' component='p'>Our system has cataloged thousands of job types and can locate very specific roles.</Typography>
                             </Box>
 
                         </CardContent>
@@ -49,8 +49,8 @@ const Cards = () => {
 
                             <BsGift style={{ fontSize: "120px", marginTop: "30px" }} />
                             <Box sx={{ marginTop: "30px" }}>
-                                <Typography variant='h5' fontWeight="bold" mb={2}>Easy to use</Typography>
-                                <Typography variant='p' component='p'>Search by title, skill or keyword. Select a location and we’ll find all the open positions in your area.</Typography>
+                                <Typography variant='h5' fontWeight="bold" mb={2}>100% Free</Typography>
+                                <Typography color="#505050" variant='p' component='p'>We are on a mission to make healthcare recruiting easier for job seekers and employers.</Typography>
                             </Box>
 
                         </CardContent>

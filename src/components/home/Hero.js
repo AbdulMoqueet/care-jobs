@@ -35,7 +35,8 @@ const Hero = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={6} xs={12} sx={{ justifyContent: "center", alignItems: "center" }}>
-                    <img style={{ width: "100%" }} src='./hero.png' alt="" />
+                
+                    <img style={{ width: "100%", boxShadow: "-0 50px 80px 0px #fc98416f" }} src='./hero.png' alt="" />
                 </Grid>
             </Grid>
         </Container>

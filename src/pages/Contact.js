@@ -17,7 +17,7 @@ const Contact = () => {
             <Grid container>
 
                 <Grid item xs={12} md={6}>
-                    <img width="100%" src="./contact.png" alt="" />
+                    <img style={{boxShadow: "-0 50px 80px 0px #fc98416f"}} width="100%" src="./contact.png" alt="" />
                 </Grid>
 
                 <Grid item xs={12} md={6} sx={{marginTop:{xs:"40px", md:"0"}}}>
