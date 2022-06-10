@@ -5,7 +5,7 @@ import {Container, Grid, Typography } from '@mui/material'
 
 const Discover = () => {
     return (
-        <Container sx={{ background: "#fff", marginRight: "auto" }}>
+        <Container sx={{ background: "#fff", paddingRight:"0 !important" }}>
             <Grid container pl={{xs:"0",md:"40px"}} pt="80px" >
                 <Grid items xs={12} md={4} >
                     <Typography variant='h4' sx={{fontSize: "34px"}}>Discover more than</Typography>
@@ -17,7 +17,7 @@ const Discover = () => {
                     marginBottom: "60px",
                     paddingRight: { md: 6, xs: 0 }
                 }}>
-                    <Typography variant='p' component='p' color="gray" >
+                    <Typography lineHeight={1.7} variant='p' component='p' color="gray" >
                         At CareJobs the perfect job is just a click away! We’ve scoured the internet to find the best healthcare organizations to work and collected all their jobs into one place. With a simple search healthcare professionals can find the job of their dreams.
                         <br />
                         <br />
@@ -25,7 +25,7 @@ const Discover = () => {
                     </Typography>
                 </Grid>
                 <Grid items xs={12} md={4}>
-                    <img width="352px" src='./discover__2.png' alt='' />
+                    <img width="100%" src='./discover__2.png' alt='' />
                 </Grid>
             </Grid>
         </Container>

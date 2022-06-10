@@ -15,7 +15,7 @@ const StyledButton = styled(Button)({
 })
 
 const StyledTypo = styled(Button)({
-    color: "#000",
+    color: "#505050",
     background: "#fff",
     fontSize: "10px",
     margin: "4px",
@@ -38,7 +38,7 @@ const FindJob = () => {
                         <TextField sx={{ width: {xs:"100%", md:"250px"} }} label="Job title" variant="standard" />
                         <TextField sx={{ width: {xs:"100%", md:"250px"} }} label="City" variant="standard" />
 
-                        <StyledButton sx={{width:{xs:"100%", md:"250px"}}}>SEARCH JOBS</StyledButton>
+                        <StyledButton sx={{width:{xs:"100%", md:"200px"}}}>SEARCH JOBS</StyledButton>
 
 
                         <Box mt={6} sx={{display: { xs: "none", md: "block" }}}>

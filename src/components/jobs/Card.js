@@ -16,9 +16,9 @@ const Card = (props) => {
 
 
             <Stack sx={{ background: "#fff", padding: "20px 30px" }}>
-                <Typography variant='h5'>{props.data.title}</Typography>
+                <Typography fontFamily='Barlow Condensed' fontSize="30px" variant='h5'>{props.data.title}</Typography>
                 <Typography my={3} variant='p' component='p'>{props.data.hospital}</Typography>
-                <Typography color="#6B6B6B" variant='p' component='p'>{props.data.desc}</Typography>
+                <Typography lineHeight={1.8} color="#6B6B6B" variant='p' component='p'>{props.data.desc}</Typography>
 
                 <Stack sx={{
                     display: "flex",

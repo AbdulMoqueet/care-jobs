@@ -8,6 +8,7 @@ const StyledButton = styled(Button)({
     borderRadius: "0",
     padding: "10px 40px",
     marginTop: "30px",
+    width:"230px",
     ":hover": {background: "#BE6C30"}
 })
 

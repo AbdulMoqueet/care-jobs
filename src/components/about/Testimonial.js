@@ -12,8 +12,8 @@ const Testimonial = () => {
                 <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
 
                     <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
-                        <Typography variant='h6'>The best platform for job search!</Typography>
-                        <Typography variant='p' component='p'>
+                        <Typography fontFamily='Barlow Condensed' variant='h5'>The best platform for job search!</Typography>
+                        <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
                         </Typography>
 
@@ -21,8 +21,8 @@ const Testimonial = () => {
                             <img width="40px" src='./testimonial__1.png' alt="" />
 
                             <Box>
-                                <Typography fontSize="15px" variant='p' component='p'>Courtney Henry</Typography>
-                                <Typography fontSize="15px" variant='p' component='p'>ophthalmologist</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>Courtney Henry</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>ophthalmologist</Typography>
                             </Box>
 
                         </Stack>
@@ -34,8 +34,8 @@ const Testimonial = () => {
                 <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
 
                     <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
-                        <Typography variant='h6'>Finding a right job has never been easier!</Typography>
-                        <Typography variant='p' component='p'>
+                        <Typography fontFamily='Barlow Condensed' variant='h5'>Finding a right job has never been easier!</Typography>
+                        <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
                         </Typography>
 
@@ -43,8 +43,8 @@ const Testimonial = () => {
                             <img width="40px" src='./testimonial__2.png' alt="" />
 
                             <Box>
-                                <Typography fontSize="15px" variant='p' component='p'>Cody Fisher</Typography>
-                                <Typography fontSize="15px" variant='p' component='p'>orthopedist</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>Cody Fisher</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>orthopedist</Typography>
                             </Box>
 
                         </Stack>
@@ -57,8 +57,8 @@ const Testimonial = () => {
                 <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
 
                     <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
-                        <Typography variant='h6'>I have finally found the right job for me!</Typography>
-                        <Typography variant='p' component='p'>
+                        <Typography fontFamily='Barlow Condensed' variant='h5'>I have finally found the right job for me!</Typography>
+                        <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
                         </Typography>
 
@@ -66,8 +66,8 @@ const Testimonial = () => {
                             <img width="40px" src='./testimonial__3.png' alt="" />
 
                             <Box>
-                                <Typography fontSize="15px" variant='p' component='p'>Devon Lane</Typography>
-                                <Typography fontSize="15px" variant='p' component='p'>cardiologist</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>Devon Lane</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>cardiologist</Typography>
                             </Box>
 
                         </Stack>
@@ -80,8 +80,8 @@ const Testimonial = () => {
                 <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
 
                     <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
-                        <Typography variant='h6'>Working conditions of my dreams! </Typography>
-                        <Typography variant='p' component='p'>
+                        <Typography fontFamily='Barlow Condensed' variant='h5'>Working conditions of my dreams! </Typography>
+                        <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
                         </Typography>
 
@@ -89,8 +89,8 @@ const Testimonial = () => {
                             <img width="40px" src='./testimonial__4.png' alt="" />
 
                             <Box>
-                                <Typography fontSize="15px" variant='p' component='p'>Albert Flores</Typography>
-                                <Typography fontSize="15px" variant='p' component='p'>surgeon</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>Albert Flores</Typography>
+                                <Typography color="#505050" fontSize="15px" variant='p' component='p'>surgeon</Typography>
                             </Box>
 
                         </Stack>

@@ -59,8 +59,6 @@ const AppPagination = ({ setData }) => {
 
     return (
         <Pagination
-            variant="outlined"
-            shape="rounded"
             page={+page}
             count={Math.ceil(pagination.count / pageSize)}
             onChange={handlePageChange} />

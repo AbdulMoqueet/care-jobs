@@ -11,19 +11,20 @@ const StyledButton = styled(Button)({
 
 const Source = () => {
     return (
-        <Container sx={{ mb: "100px", background: "#fff", paddingTop: "80px", paddingBottom: "80px" }}>
+        <Container sx={{ mb: "100px", marginLeft:"0", background: "#fff", paddingTop: "80px", paddingBottom: "80px" }}>
             <Grid container spacing={2} justifyContent="center" alignItems="center">
 
                 <Grid item xs={12} md={6}>
                     <Box sx={{ width: { xs: "auto", md: "450px" }, paddingLeft: { xs: "0", md: "70px" } }}>
                         <Box sx={{width:"fit-content"}}>
-                            <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: { xs: "left", md: "left" } }}>Need Help Sourcing </Typography>
+                            <Typography fontFamily='Barlow Condensed' variant='h3' sx={{ fontSize: { xs: "30px", md: "50px" }, textAlign: { xs: "left", md: "left" } }}>Need Help Sourcing </Typography>
 
-                            <Typography variant='h3' sx={{ fontSize: { xs: "25px", md: "32px" }, textAlign: "right" }}>- Candidates? </Typography>
+                            <Typography fontFamily='Barlow Condensed' variant='h3' sx={{ fontSize: { xs: "30px", md: "50px" }, textAlign: "right" }}>- Candidates? </Typography>
                         </Box>
 
-                        <Typography sx={{ my: "20px", color: "#505050" }} variant='p' component='p'>
-                            Do you have a lot of open positions needing to be filled? We have lots of traffic and can help you get in front of highly qualified candidates today! Our vast network of healthcare recruiting tools can help you increase applications submissions four times the number you recieve now (and sometimes more).
+                        <Typography lineHeight={1.7} sx={{ my: "20px", color: "#505050" }} variant='p' component='p'>
+
+                            Do you have a lot of open positions needing to be filled? We have lots of traffic and can help you get in front of highly qualified candidates today! Our vast network of healthcare recruiting tools can help you increase applications submissions four times the number you recieve now (and sometimes more). <br/><br/>
 
                             Contact us today and we'll explain everything.
                         </Typography>

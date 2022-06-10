@@ -13,10 +13,11 @@ const StyledButton = styled(Button)({
 })
 
 const StyledTypo = styled(Button)({
-    color: "#000",
+    color: "#505050",
     background: "#fff",
     fontSize: "10px",
-    margin: "4px"
+    margin: "4px",
+    border: "1px solid #E7E1DC"
 })
 
 const JobDetails = () => {
@@ -32,7 +33,7 @@ const JobDetails = () => {
                         <TextField sx={{ width: { xs: "100%", md: "250px" } }} label="Job title" variant="standard" />
                         <TextField sx={{ width: { xs: "100%", md: "250px" } }} label="City" variant="standard" />
 
-                        <StyledButton sx={{ width: { xs: "100%", md: "250px" } }}>SEARCH JOBS</StyledButton>
+                        <StyledButton sx={{ width: { xs: "100%", md: "200px" } }}>SEARCH JOBS</StyledButton>
 
 
                         <Box mt={6} sx={{ display: { xs: "none", md: "block" } }}>
@@ -77,17 +78,17 @@ const JobDetails = () => {
 
                 <Grid item xs={12} md={8}>
 
-                    <Box my={7} sx={{ background: "#fff", padding: "25px 30px" }}>
+                    <Box my={7} sx={{ background: "#fff", padding: {xs:"25px 10px",md:"25px 30px"} }}>
 
                         <Stack flexDirection="row" justifyContent='space-between' alignItems='center'>
                             <Box>
-                                <Typography variant='h5'>Registered Nurse (RN)</Typography>
-                                <Typography variant='p' component='p'>Hospital Name - New York, NY</Typography>
+                                <Typography fontFamily='Barlow Condensed' variant='h5' fontSize={{xs:"20px", md:"30px"}}>Registered Nurse (RN)</Typography>
+                                <Typography fontSize={{xs:"12px", md:"15px"}} variant='p' component='p'>Hospital Name - New York, NY</Typography>
                             </Box>
 
                             <Box>
-                                <Typography color="gray" fontSize='14px' variant='p' component='p'>POSTED ON</Typography>
-                                <Typography fontSize='14px' variant='p' component='p'>April 21, 2022 at 3:30 PM</Typography>
+                                <Typography fontSize={{xs:"12px", md:"15px"}} color="gray" variant='p' component='p'>POSTED ON</Typography>
+                                <Typography fontSize={{xs:"10px", md:"15px"}} variant='p' component='p'>April 21, 2022 at 3:30 PM</Typography>
                             </Box>
 
                         </Stack>
@@ -95,7 +96,7 @@ const JobDetails = () => {
                         <Typography mb={2} mt={1} variant='p' component='p'>Job Type</Typography>
                         <Typography mt={3} fontWeight='700' variant='p' component='p'>RESPONSIBILITIES</Typography>
 
-                        <Typography sx={{ margin: "5px 0", lineHeight: "1.7", color: "#6B6B6B" }} variant='p' component='p'>London Wellness Academy provides all the training for you to become a successful Medi-Spa physician at sea prior to joining your ship. The training takes place in Miami, Florida (USA) under the direction of Dr. Brad Herman, Medical Director at OneSpaWorld and a licensed Florida physician.
+                        <Typography sx={{ margin: "5px 0", lineHeight: "1.7", color: "#6B6B6B" }} variant='p' component='p'>London Wellness Academy provides all the training for you to become a successful Medi-Spa physician at sea prior to joining your ship. The training takes place in Miami, Florida (USA) under the direction of Dr. Brad Herman, Medical Director at OneSpaWorld and a licensed Florida physician.<br/> <br/>
 
                             During training and once on board, you will be expected to have excellent communication skills and be able to provide esthetic medical treatments safely and effectively to address the concerns of your patients. This is an exciting opportunity to meet new people every day and to learn new cultures, all whilst managing your very own aesthetic medical clinic at sea.</Typography>
 

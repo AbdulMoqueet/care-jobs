@@ -13,19 +13,29 @@ const Hero = () => {
 
     return (
         <Container>
-            <Grid container spacing={2} sx={{ minHeight: "100vh", justifyContent: "center", alignItems: "center" }}>
+            <Grid container spacing={2} sx={{ my: "50px", justifyContent: "center", alignItems: "center" }}>
                 <Grid item md={6} xs={12} sx={{ justifyContent: "center", alignItems: "center" }}>
-                    <Stack gap={3} textAlign="center">
-                        <Typography sx={{fontSize: {xs:"30px", sm:"50px"}, marginTop:{xs:"30px", md:"0"}}} variant='h2' component='h2'>MILLIONS OF JOB</Typography>
-                        <Typography sx={{fontSize: {xs:"30px", sm:"50px"}}} variant='h2' component='h2'>- IN ONE PLACE</Typography>
+                    <Stack gap={1} textAlign="center">
 
-                        <Box>
-                            <Typography variant='p' component='p' color="gray" fontSize={18}>Check out how Care Jobs can help you find your</Typography>
-                            <Typography variant='p' component='p' color="gray" fontSize={18}>perfect job in your area in healthcare industry</Typography>
+                        <Typography
+                            sx={{
+                                fontSize: { xs: "50px", sm: "70px" },
+                                marginTop: { xs: "30px", md: "0" },
+                                fontFamily: 'Barlow Condensed'
+                            }} variant='h2'>MILLIONS OF JOB</Typography>
+
+                        <Typography sx={{
+                            fontSize: { xs: "50px", sm: "70px" },
+                            fontFamily: 'Barlow Condensed'
+                        }} variant='h2' component='h2'>- IN ONE PLACE</Typography>
+
+                        <Box sx={{marginBottom: "10px", marginTop:"10px"}}>
+                            <Typography variant='p' component='p' color="#505050" fontSize={18}>Check out how Care Jobs can help you find your</Typography>
+                            <Typography variant='p' component='p' color="#505050" fontSize={18}>perfect job in your area in healthcare industry</Typography>
                         </Box>
 
 
-                        <Stack sx={{ margin: "auto", width: {xs:"100%", sm:"400px"}, gap: "20px" }}>
+                        <Stack sx={{ margin: "auto", width: { xs: "100%", sm: "400px" }, gap: "20px" }}>
                             <TextField label="Job Title" variant="standard" />
                             <TextField label="City" variant="standard" />
                             <StyledButton>SEARCH JOBS</StyledButton>
@@ -35,8 +45,25 @@ const Hero = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={6} xs={12} sx={{ justifyContent: "center", alignItems: "center" }}>
-                
-                    <img style={{ width: "100%", boxShadow: "-0 50px 80px 0px #fc98416f" }} src='./hero.png' alt="" />
+                    <Box sx={{ position: "relative" }}>
+                        <img style={{ width: "100%" }} src='./hero.png' alt="" />
+
+                        <Box sx={{
+                            position: "absolute",
+                            height: "100px",
+                            width: "80%",
+                            bottom: "20px",
+                            left: "50%",
+                            transform: "translate(-50%)",
+                            boxShadow: "0 50px 100px 10px #fc9841d6",
+                            zIndex: "-1"
+                        }}>
+
+                        </Box>
+
+                    </Box>
+
+
                 </Grid>
             </Grid>
         </Container>
