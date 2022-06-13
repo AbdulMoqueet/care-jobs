@@ -69,7 +69,7 @@ const Footer = () => {
                     <Grid item xxs={12} sm={12} md={6} order={{ xs: 1, md: 2 }} mb={{ xs: 2, md: 0 }}>
                         <Stack flexDirection='row' justifyContent={{ md: 'flex-end' }}>
                             <Container>
-                                <Stack flexDirection='row' gap={3}>
+                                <Stack flexDirection='row' gap={3} justifyContent={{ md: 'flex-end' }}>
                                     <StyledBox to="#">
                                         <BsFacebook />
                                     </StyledBox>
