@@ -7,13 +7,13 @@ const StyledButton = styled(Button)({
     borderRadius: "0",
     padding: "8px 60px",
     marginTop: "30px",
-    "&:hover":{background:"#000", color:"#fff"}
+    "&:hover": { background: "#000", color: "#fff" }
 })
 
 const Source = () => {
     return (
-        <Box sx={{background: "#fff"}}>
-            <Container sx={{ mb: "100px", background: "#fff", paddingTop: {xxs:"50px", md:"80px"}, paddingBottom: "80px" }}>
+        <Box sx={{ background: "#fff", marginRight: { lg: "80px", xl:"200px" } }}>
+            <Container sx={{ mb: "100px", background: "#fff", paddingTop: { xxs: "50px", md: "80px" }, paddingBottom: "80px" }}>
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
 
                     <Grid item xxs={12} md={6}>
@@ -37,8 +37,8 @@ const Source = () => {
                         </Box>
 
                     </Grid>
-                    <Grid item xxs={12} md={6} textAlign={{xxs:"left", md:"right"}}>
-                        <Box component="img" width={{xxs:"100%", md:"500px"}} src="./sourcing.png" alt=""></Box>
+                    <Grid item xxs={12} md={6} textAlign={{ xxs: "left", md: "right" }}>
+                        <Box component="img" width={{ xxs: "100%", md: "500px" }} src="./sourcing.png" alt=""></Box>
                     </Grid>
                 </Grid>
             </Container>
