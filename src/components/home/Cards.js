@@ -13,7 +13,7 @@ const Cards = () => {
 
 
             <Grid container spacing={6} mt={3}>
-                <Grid item xs={12} md={4} display="flex" alignItems="center" justifyContent="center">
+                <Grid item xxs={12} md={4} display="flex" alignItems="center" justifyContent="center">
                     <Card sx={{ width: 320, minHeight: 300, paddingBottom: "40px" }} elevation={0}>
                         <CardContent>
 
@@ -30,7 +30,7 @@ const Cards = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} md={4} display="flex" alignItems="center" justifyContent="center">
+                <Grid item xxs={12} md={4} display="flex" alignItems="center" justifyContent="center">
                     <Card sx={{ width: 320, minHeight: 300, paddingBottom: "40px" }} elevation={0}>
                         <CardContent>
 
@@ -48,7 +48,7 @@ const Cards = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} md={4} display="flex" alignItems="center" justifyContent="center">
+                <Grid item xxs={12} md={4} display="flex" alignItems="center" justifyContent="center">
                     <Card sx={{ width: 320, minHeight: 300, paddingBottom: "40px" }} elevation={0}>
                         <CardContent>
 

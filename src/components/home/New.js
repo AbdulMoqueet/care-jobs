@@ -13,9 +13,17 @@ const New = () => {
     return (
         <Box sx={{ position: "relative", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./new.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat", minHeight: "100vh" }}>
 
-            <Container sx={{position: "relative"}}>
+            <Container sx={{ position: "relative" }}>
 
-                <Box sx={{ color: "#fff", position: "absolute", right: { xs: "auto", sm: "0" }, top: {xs:"30vh", md:"45vh", xl:"60vh"}, left: { xs: "50%", sm: "auto" }, transform: { xs: "translate(-50%)", sm: "translate(0)" }, width: { xs: "300px", sm: "500px" } }}>
+                <Box sx={{
+                    color: "#fff",
+                    position: "absolute",
+                    right: { xxs: "auto", sm: "0" },
+                    top: { xxs:"10vh", xs: "30vh", sm:"50vh", md: "45vh", xl: "60vh" },
+                    left: { xxs: "50%", sm: "50%", md:"auto" },
+                    transform: { xxs: "translate(-50%)", sm: "translate(-50%, -50%)", md:"translate(0)" },
+                    width: { xxs:"260px", xs: "300px", sm: "500px" }
+                }}>
                     <Typography variant='h4'>We know you care, and we
                         do too</Typography>
 

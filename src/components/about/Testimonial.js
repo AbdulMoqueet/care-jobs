@@ -4,14 +4,22 @@ import React from 'react'
 const Testimonial = () => {
     return (
         <Container sx={{ paddingTop: "40px", paddingBottom: "100px" }}>
-            <Typography sx={{ fontSize: { xs: "25px", md: "32px" } }} variant='h3' textAlign="center">Few words from our clients</Typography>
+            <Typography sx={{ fontSize: { xxs: "20px", xs: "25px", md: "32px" } }} variant='h3' textAlign="center">Few words from our clients</Typography>
 
 
             <Grid container mt={6}>
 
-                <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
+                <Grid item xxs={12} md={6} sx={{ display: "flex", padding: { xxs: "40px 0", md: "15px" } }} >
 
-                    <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
+                    <Stack gap={2} sx={{ position: "relative", background: "#fff", padding: "30px" }}>
+
+                        <img style={{
+                            position: "absolute",
+                            right: "0",
+                            top: 0,
+                            margin: "20px"
+                        }} width="120px" src='./quotes.svg' alt="" />
+
                         <Typography fontFamily='Barlow Condensed' variant='h5'>The best platform for job search!</Typography>
                         <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
@@ -31,9 +39,17 @@ const Testimonial = () => {
 
                 </Grid>
 
-                <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
+                <Grid item xxs={12} md={6} sx={{ display: "flex", padding: { xxs: "40px 0", md: "15px" } }} >
 
-                    <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
+                    <Stack gap={2} sx={{ position: "relative", background: "#fff", padding: "30px" }}>
+
+                        <img style={{
+                            position: "absolute",
+                            right: "0",
+                            top: 0,
+                            margin: "20px"
+                        }} width="120px" src='./quotes.svg' alt="" />
+
                         <Typography fontFamily='Barlow Condensed' variant='h5'>Finding a right job has never been easier!</Typography>
                         <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
@@ -54,9 +70,16 @@ const Testimonial = () => {
                 </Grid>
 
 
-                <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
+                <Grid item xxs={12} md={6} sx={{ display: "flex", padding: { xxs: "40px 0", md: "15px" } }} >
 
-                    <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
+                    <Stack gap={2} sx={{ position: "relative", background: "#fff", padding: "30px" }}>
+                        <img style={{
+                            position: "absolute",
+                            right: "0",
+                            top: 0,
+                            margin: "20px"
+                        }} width="120px" src='./quotes.svg' alt="" />
+
                         <Typography fontFamily='Barlow Condensed' variant='h5'>I have finally found the right job for me!</Typography>
                         <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
@@ -77,9 +100,17 @@ const Testimonial = () => {
                 </Grid>
 
 
-                <Grid item xs={12} md={6} sx={{ display: "flex", padding: { xs: "40px 0", md: "15px" } }} >
+                <Grid item xxs={12} md={6} sx={{ display: "flex", padding: { xxs: "40px 0", md: "15px" } }} >
 
-                    <Stack gap={2} sx={{ background: "#fff", padding: "30px" }}>
+                    <Stack gap={2} sx={{position:"relative", background: "#fff", padding: "30px" }}>
+                       
+                    <img style={{
+                            position: "absolute",
+                            right: "0",
+                            top: 0,
+                            margin:"20px"
+                        }} width="120px" src='./quotes.svg' alt="" />
+                       
                         <Typography fontFamily='Barlow Condensed' variant='h5'>Working conditions of my dreams! </Typography>
                         <Typography lineHeight={1.6} color="#505050" variant='p' component='p'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.

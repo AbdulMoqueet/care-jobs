@@ -5,10 +5,9 @@ const Hero = () => {
 
     return (
         <Container>
-            <Grid container spacing={1} sx={{ marginBottom: "100px", minHeight: "100vh", justifyContent: "center", alignItems: "center" }}>
+            <Grid container sx={{ marginBottom: "100px", marginTop:{xxs:"0", md:"100px"}, justifyContent: "center", alignItems: "center" }}>
 
-                <Grid item xs={12} md={6}>
-
+                <Grid item xxs={12} md={6}>
 
                 <Box sx={{ position: "relative" }}>
                 <img width="100%" src="about__hero.png" />
@@ -31,20 +30,21 @@ const Hero = () => {
                     
                 </Grid>
 
-                <Grid item xs={12} md={6} mt={{ xs: "30px", md: "0" }}>
+                <Grid item xxs={12} md={6} mt={{ xs: "30px", md: "0" }}>
                     <Stack justifyContent="center" alignItems="center">
 
-                        <Box sx={{ maxWidth: { xs: "300px", md: "500px" }, paddingLeft: { xs: "0", md: "100px" } }}  >
+                        <Box sx={{ paddingLeft: { xxs: "0", md: "100px" } }}  >
 
                             <Typography variant='h4' sx={{
-                                textAlign: "right",
-                                fontSize: { xs: "30px", md: "50px" },
-                                fontFamily: 'Barlow Condensed'
+                                textAlign: {xxs:"center", md:"right"},
+                                fontSize: { xxs: "30px", md: "50px" },
+                                fontFamily: 'Barlow Condensed',
+                                marginTop: {xxs:"30px", xs:"20px", md: "0"}
                             }}>FIND YOUR DREAM JOB </Typography>
 
                             <Typography sx={{
-                                textAlign: "right",
-                                fontSize: { xs: "30px", md: "50px" },
+                                textAlign: {xxs:"center", md:"right"},
+                                fontSize: { xxs: "30px", md: "50px" },
                                 fontFamily: 'Barlow Condensed'
                             }} variant='h4' textAlign="right">- @CARE JOBS </Typography>
 

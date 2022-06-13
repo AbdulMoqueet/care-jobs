@@ -1,16 +1,7 @@
 import React from 'react'
 import { Box, Button, Container, Grid, Pagination, Stack, styled, TextField, Typography } from '@mui/material'
 import Card from '../components/jobs/Card'
-
-const StyledButton = styled(Button)({
-    color: "#fff",
-    background: "#BE6C30",
-    border: "1px solid #fff",
-    borderRadius: "0",
-    padding: "10px 30px",
-    marginTop: "30px",
-    ":hover": { background: "#BE6C30" }
-})
+import StyledButton from '../components/buttons/StyledButton'
 
 const StyledTypo = styled(Button)({
     color: "#505050",
@@ -27,16 +18,18 @@ const JobDetails = () => {
 
                 <Grid item xs={12} md={4}>
 
-                    <Box sx={{ padding: { xs: "50px 0", md: "50px" } }}>
+                    <Box sx={{ padding: { xxs: "50px 0", md: "50px" } }}>
 
                         <Typography variant='h5'>Search Job</Typography>
-                        <TextField sx={{ width: { xs: "100%", md: "250px" } }} label="Job title" variant="standard" />
-                        <TextField sx={{ width: { xs: "100%", md: "250px" } }} label="City" variant="standard" />
+                        <TextField sx={{ width: { xxs: "100%", md: "250px" } }} label="Job title" variant="standard" />
+                        <TextField sx={{ width: { xxs: "100%", md: "250px" } }} label="City" variant="standard" />
 
-                        <StyledButton sx={{ width: { xs: "100%", md: "200px" } }}>SEARCH JOBS</StyledButton>
+                        <StyledButton
+                            text="SEARCH JOBS"
+                            sx={{ width: { xxs: "100%", md: "200px" } }} />
 
 
-                        <Box mt={6} sx={{ display: { xs: "none", md: "block" } }}>
+                        <Box mt={6} sx={{ display: { xxs: "none", md: "block" } }}>
 
                             <Typography my={3} variant='h5'>Related job searches</Typography>
 
@@ -53,7 +46,7 @@ const JobDetails = () => {
                         </Box>
 
 
-                        <Box mt={6} sx={{ display: { xs: "none", md: "block" } }}>
+                        <Box mt={6} sx={{ display: { xxs: "none", md: "block" } }}>
 
                             <Typography my={3} variant='h5'>People also searched</Typography>
 
@@ -78,17 +71,17 @@ const JobDetails = () => {
 
                 <Grid item xs={12} md={8}>
 
-                    <Box my={7} sx={{ background: "#fff", padding: {xs:"25px 10px",md:"25px 30px"} }}>
+                    <Box my={7} sx={{ background: "#fff", padding: { xxs: "25px 10px", md: "25px 30px" } }}>
 
                         <Stack flexDirection="row" justifyContent='space-between' alignItems='center'>
                             <Box>
-                                <Typography fontFamily='Barlow Condensed' variant='h5' fontSize={{xs:"20px", md:"30px"}}>Registered Nurse (RN)</Typography>
-                                <Typography fontSize={{xs:"12px", md:"15px"}} variant='p' component='p'>Hospital Name - New York, NY</Typography>
+                                <Typography fontFamily='Barlow Condensed' variant='h5' fontSize={{ xxs: "20px", md: "30px" }}>Registered Nurse (RN)</Typography>
+                                <Typography fontSize={{ xs: "12px", md: "15px" }} variant='p' component='p'>Hospital Name - New York, NY</Typography>
                             </Box>
 
                             <Box>
-                                <Typography fontSize={{xs:"12px", md:"15px"}} color="gray" variant='p' component='p'>POSTED ON</Typography>
-                                <Typography fontSize={{xs:"10px", md:"15px"}} variant='p' component='p'>April 21, 2022 at 3:30 PM</Typography>
+                                <Typography fontSize={{ xxs: "12px", md: "15px" }} color="gray" variant='p' component='p'>POSTED ON</Typography>
+                                <Typography fontSize={{ xxs: "10px", md: "15px" }} variant='p' component='p'>April 21, 2022 at 3:30 PM</Typography>
                             </Box>
 
                         </Stack>
@@ -96,7 +89,7 @@ const JobDetails = () => {
                         <Typography mb={2} mt={1} variant='p' component='p'>Job Type</Typography>
                         <Typography mt={3} fontWeight='700' variant='p' component='p'>RESPONSIBILITIES</Typography>
 
-                        <Typography sx={{ margin: "5px 0", lineHeight: "1.7", color: "#6B6B6B" }} variant='p' component='p'>London Wellness Academy provides all the training for you to become a successful Medi-Spa physician at sea prior to joining your ship. The training takes place in Miami, Florida (USA) under the direction of Dr. Brad Herman, Medical Director at OneSpaWorld and a licensed Florida physician.<br/> <br/>
+                        <Typography sx={{ margin: "5px 0", lineHeight: "1.7", color: "#6B6B6B" }} variant='p' component='p'>London Wellness Academy provides all the training for you to become a successful Medi-Spa physician at sea prior to joining your ship. The training takes place in Miami, Florida (USA) under the direction of Dr. Brad Herman, Medical Director at OneSpaWorld and a licensed Florida physician.<br /> <br />
 
                             During training and once on board, you will be expected to have excellent communication skills and be able to provide esthetic medical treatments safely and effectively to address the concerns of your patients. This is an exciting opportunity to meet new people every day and to learn new cultures, all whilst managing your very own aesthetic medical clinic at sea.</Typography>
 
@@ -131,7 +124,7 @@ const JobDetails = () => {
                             <li>Being on time for work, prompt for each appointment</li>
                         </ul>
 
-                        <StyledButton>Apply Now</StyledButton>
+                        <StyledButton text="Apply Now" />
 
                     </Box>
 

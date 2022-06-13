@@ -11,6 +11,18 @@ const globalTheme = createTheme({
       main: '#BE6C30'
     }
   },
+
+  breakpoints: {
+    values: {
+      xxs:0,
+      xs: 350,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

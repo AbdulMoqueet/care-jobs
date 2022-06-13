@@ -1,24 +1,14 @@
 import React from 'react'
 import { Box, Button, Grid, Stack, styled, TextField, Typography } from '@mui/material'
-
-const StyledButton = styled(Button)({
-    color: "#fff",
-    background: "#BE6C30",
-    border: "1px solid #fff",
-    borderRadius: "0",
-    padding: "10px 40px",
-    marginTop: "30px",
-    width:"230px",
-    ":hover": {background: "#BE6C30"}
-})
+import StyledButton from '../buttons/StyledButton'
 
 const JobAlert = () => {
     return (
         <Box mb={14}>
 
-            <Grid container spacing={2} sx={{background:"#fff", padding:"40px", maxWidth: "700px", margin: "60px auto"}}>
+            <Grid container sx={{background:"#fff", padding:"40px", maxWidth: "700px", margin: "60px auto"}}>
 
-                <Grid pl={0} item xs={12} md={6} order={{xs:2, md:1}}>
+                <Grid mt={{xxs:"30px", md:0}} item xxs={12} md={6} order={{xxs:2, md:1}}>
                     <Stack gap="20px">
                         <Typography variant='h5'>New jobs posted daily, sign up for alerts</Typography>
                         <Typography color="#6B6B6B" fontSize='14px' variant='p' component='p'>Create an email alert to get the latest jobs delivered right to your inbox</Typography>
@@ -27,12 +17,16 @@ const JobAlert = () => {
                 </Grid>
 
 
-                <Grid pl={0} item xs={12} md={6} order={{xs:1, md:2}}>
+                <Grid pl={3} item xxs={12} md={6} order={{xxs:1, md:2}}>
                     <Stack gap="10px">
                         <TextField label="Job title" variant="standard" />
                         <TextField label="Zip code" variant="standard" />
                         <TextField label="Email" variant="standard" />
-                        <StyledButton>CREATE JOB ALERT</StyledButton>
+                        <StyledButton text="CREATE JOB ALERT" sx={{
+                             padding: "10px 40px",
+                             marginTop: "30px",
+                             width:"230px",
+                        }} />
                     </Stack>
                 </Grid>
 

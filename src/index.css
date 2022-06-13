@@ -8,9 +8,13 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+html, body {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
   background-color: #F1EDEA;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,13 +51,13 @@ code {
 }
 
 /* Pagination */
-.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
-  color: #BE6C30;
+.Mui-selected{
+  color: #BE6C30 !important;
   background-color: #fff !important;
   border-radius: 0 !important;
   border-bottom: solid 1px #BE6C30 !important;
 }
 
-.css-1oj2twp-MuiPagination-root{
-  background-color: #fff;
+.MuiPagination-ul{
+  background-color: #fff !important;
 }

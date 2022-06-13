@@ -58,7 +58,7 @@ const AppPagination = ({ setData }) => {
     }
 
     return (
-        <Pagination
+        <Pagination className='pagination'
             page={+page}
             count={Math.ceil(pagination.count / pageSize)}
             onChange={handlePageChange} />

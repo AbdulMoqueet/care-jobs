@@ -16,7 +16,7 @@ const Contact = () => {
 
             <Grid container>
 
-                <Grid item xs={12} md={6}>
+                <Grid item xxs={12} md={6}>
 
 
                     <Box sx={{ position: "relative" }}>
@@ -40,10 +40,10 @@ const Contact = () => {
 
                 </Grid>
 
-                <Grid item xs={12} md={6} sx={{ marginTop: { xs: "40px", md: "0" } }}>
+                <Grid item xxs={12} md={6} sx={{ marginTop: { xs: "40px", md: "0" } }}>
 
-                    <Stack sx={{ gap: "20px", paddingLeft: { xs: "0", md: "100px" }, paddingRight: { xs: "0", md: "100px" } }}>
-                        <Typography sx={{ fontSize: { xs: "25px", md: "45px" } }} variant='h2'>CONTACT US</Typography>
+                    <Stack sx={{ gap: "20px", paddingLeft: { xxs: "0", md: "100px" }, paddingRight: { xxs: "0", md: "100px" } }}>
+                        <Typography mt={{xxs: "30px", md:"0"}} sx={{ fontSize: { xxs: "30px", sm:"45px", md: "50px" } }} variant='h2'>CONTACT US</Typography>
                         <Typography variant='p' component='p'>
                             100 Summit Dr.<br />
                             Burlington, MA 01803 <br />
