@@ -11,9 +11,9 @@ const StyledButton = styled(Button)({
 
 const Full = () => {
     return (
-        <Box sx={{ position: "relative", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./new.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat", minHeight: "100vh" }}>
+        <Box sx={{ position: "relative", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./new.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat", minHeight: "100vh", marginRight: { lg: "80px",  xl:"200px" } }}>
 
-            <Container sx={{ position: "relative" }}>
+            <Container sx={{ position: "relative", marginRight: { lg: "80px",  xl:"200px" }  }}>
 
                 <Box sx={{
                     color: "#fff",
