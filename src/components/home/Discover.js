@@ -11,7 +11,7 @@ const Discover = () => {
 
                 <Grid container pl={{ xxs: "0", md: "40px" }} pt="40px">
 
-                    <Grid items xxs={12} md={4} display="flex" justifyContent="center" alignItems="center" >
+                    <Grid items xxs={12} md={4} mt={{xl:"-50px", lg:"-15px" }} display="flex" justifyContent="center" alignItems="center" >
                         <Box>
                             <Typography variant='h4' sx={{ fontSize: { xxs: "28px", xs: "34px" } }}>Discover more than</Typography>
                             <Typography sx={{ fontSize: { xxs: "28px", xs: "34px" } }} variant='h4' mt="15px" mb="40px"><span style={{ color: "#BE6C30" }}>2 million</span> jobs!</Typography>
@@ -21,7 +21,7 @@ const Discover = () => {
                     </Grid>
 
                     <Grid items xxs={12} md={4} sx={{
-                        marginTop: { md: "174px", xl:"202px", xs: "60px" },
+                        marginTop: { md: "165px", xl:"180px", xs: "60px" },
                         marginBottom: "60px",
                         paddingRight: { xxs: 0, md: 6  },
                         paddingLeft: { xxs: 0, md: 6  }
@@ -34,8 +34,8 @@ const Discover = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xxs={12} md={4}  display='flex' alignItems='center' justifyContent='center'>
-                        <Box pt={{xxs:2, md:8}} component='img' sx={{ width: { xs: "100%", sm: "400px", md: "100%" } }} src='./discover__2.png' alt='' />
+                    <Grid item xxs={12} md={4} display='flex' alignItems='center' justifyContent='center'>
+                        <Box pt={{xl:6, lg:4, sm:0}} component='img' sx={{ width: { xs: "100%", sm: "400px", md: "100%" } }} src='./discover__2.png' alt='' />
                     </Grid>
 
 
