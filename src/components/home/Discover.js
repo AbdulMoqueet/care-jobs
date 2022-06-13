@@ -7,21 +7,21 @@ const Discover = () => {
     return (
         <Box sx={{ width: "100%" }}>
 
-            <Container sx={{ width: { lg: "calc(100% - 80px)", maxWidth: "calc(580px + 50%) !important" }, background: "#fff", paddingRight: "0 !important", marginRight: "0" }}>
+            <Container sx={{ width: { lg: "calc(100% - 80px)", maxWidth: "calc(580px + 50%) !important" }, background: "#fff", paddingRight: {md:"0 !important"}, marginRight: "0" }}>
 
-                <Grid container pl={{ xxs: "0", md: "40px" }} pt="80px">
+                <Grid container pl={{ xxs: "0", md: "40px" }} pt="40px">
 
-                    <Grid items xs={12} md={4} display="flex" justifyContent="center" >
+                    <Grid items xxs={12} md={4} display="flex" justifyContent="center" alignItems="center" >
                         <Box>
                             <Typography variant='h4' sx={{ fontSize: { xxs: "28px", xs: "34px" } }}>Discover more than</Typography>
-                            <Typography sx={{ fontSize: { xxs: "28px", xs: "34px" } }} variant='h4' mt="15px" mb="40px"><span style={{ color: "#BE6C30" }}>2 million</span> jobs</Typography>
-                            <img width="320px" src='./discover__1.png' alt='' />
+                            <Typography sx={{ fontSize: { xxs: "28px", xs: "34px" } }} variant='h4' mt="15px" mb="40px"><span style={{ color: "#BE6C30" }}>2 million</span> jobs!</Typography>
+                            <Box component='img' sx={{textAlign:"center", width:{xxs: "320px", md:"100%"}}}  src='./discover__1.png' alt='' />
                         </Box>
 
                     </Grid>
 
                     <Grid items xxs={12} md={4} sx={{
-                        marginTop: { md: "135px", xs: "60px" },
+                        marginTop: { md: "174px", xl:"202px", xs: "60px" },
                         marginBottom: "60px",
                         paddingRight: { xxs: 0, md: 6  },
                         paddingLeft: { xxs: 0, md: 6  }
@@ -34,8 +34,8 @@ const Discover = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xxs={12} md={4} mt={2} display='flex' alignItems='center' justifyContent='center'>
-                        <Box component='img' sx={{ width: { xs: "100%", sm: "400px", md: "100%" } }} src='./discover__2.png' alt='' />
+                    <Grid item xxs={12} md={4}  display='flex' alignItems='center' justifyContent='center'>
+                        <Box pt={{xxs:2, md:8}} component='img' sx={{ width: { xs: "100%", sm: "400px", md: "100%" } }} src='./discover__2.png' alt='' />
                     </Grid>
 
 
