@@ -9,7 +9,7 @@ const StyledButton = styled(Button)({
     marginTop: "30px"
 })
 
-const New = () => {
+const Full = () => {
     return (
         <Box sx={{ position: "relative", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./new.png)", backgroundSize: "cover", backgroundRepeat: "no-repeat", minHeight: "100vh" }}>
 
@@ -41,4 +41,4 @@ const New = () => {
     )
 }
 
-export default New
+export default Full

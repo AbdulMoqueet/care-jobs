@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import Hero from '../components/home/Hero'
 import Discover from '../components/home/Discover'
 import Cards from '../components/home/Cards'
-import New from '../components/home/New'
+import Full from '../components/home/Full'
 import JobAlert from '../components/home/JobAlert'
 
 
@@ -14,7 +14,7 @@ const Homepage = () => {
         <Hero/>
         <Discover/>
         <Cards/>
-        <New/>
+        <Full/>
         <JobAlert/>
     </Box>
   )

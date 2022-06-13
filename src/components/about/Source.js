@@ -12,7 +12,7 @@ const StyledButton = styled(Button)({
 
 const Source = () => {
     return (
-        <Box sx={{ background: "#fff", marginRight: { lg: "80px", xl:"200px" } }}>
+        <Box sx={{ background: "#fff", marginRight: { lg: "80px",  xl:"200px" } }}>
             <Container sx={{ mb: "100px", background: "#fff", paddingTop: { xxs: "50px", md: "80px" }, paddingBottom: "80px" }}>
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
 
